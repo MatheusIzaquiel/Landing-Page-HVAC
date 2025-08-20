@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,7 @@ export function Header() {
   ];
 
   return (
-    <header className="w-full sticky top-0 bg-white">
+    <header className="w-full sticky top-0 bg-white shadow-[0_4px_6px_rgba(0,0,0,0.2)]">
       <div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between relative">
         {/* LOGO */}
         <span className="font-bold text-2xl">
@@ -74,13 +74,16 @@ export function Header() {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-gray-700 cursor-pointer hover:text-blue-600 transition-colors"
+                className="text-gray-700 text-start text-sm cursor-pointer hover:text-blue-600 transition-colors"
               >
                 {item.label}
               </button>
             ))}
-            <span className="text-sm">(+55) xx xxxxx-xxxx</span>
-            <button className="bg-blue-600 text-white px-2 py-1 rounded-lg hover:bg-blue-500 duration-200">
+            <div className="flex items-center gap-2">
+              <Phone className="w-4 h-4"/>
+              <span className="text-sm text-start">(+55) xx xxxxx-xxxx</span>
+            </div>
+            <button className="bg-blue-600 text-white px-2 py-1 rounded-lg w-[100px] hover:bg-blue-700 duration-200">
               Cotação
             </button>
           </ul>

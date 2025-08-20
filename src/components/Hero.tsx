@@ -3,9 +3,12 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="w-full bg-blue-100" id="inicio">
-      <div className="max-w-7xl mx-auto px-4 py-3 lg:flex gap-10"> 
+    <section className="w-full bg-gradient-to-b from-blue-200 to-blue-100" id="inicio">
+      <div className="container max-w-7xl mx-auto px-4 py-3 lg:flex gap-10"> 
+        {/* Caixa de Texto */}
         <div className="flex flex-col">
+
+          {/* Titulo da caixa */}
           <h2 className="text-4xl mt-12">
             Serviços Profissionais de HVAC no <span>Rio de Janeiro</span>
           </h2>
@@ -14,7 +17,9 @@ export function Hero() {
             serviços especializados de aquecimento, ventilação e ar condicionado.
             Licenciados, segurados e com a confiança dos Cariocas.
           </p>
-          <div className="flex flex-col gap-4 lg:flex-row">
+
+          {/* Caixa de botões */}
+          <div className="flex flex-col gap-4 md:flex-row">
             <button className="bg-blue-700 text-white py-1 px-2 rounded-md cursor-pointer hover:bg-blue-600 duration-300">
               Agendar Serviço
             </button>
@@ -22,6 +27,8 @@ export function Hero() {
               Serviços de Emergência
             </button>
           </div>
+
+          {/* Caixa de Serviços */}
           <div className="flex justify-around mt-10">
             <div className="flex flex-col items-center justify-center space-y-3">
               <Shield className="text-blue-700"/>
@@ -37,13 +44,15 @@ export function Hero() {
             </div>
           </div>
         </div>
+
+        {/* Imagem */}
         <Image 
          src="/hero-img.avif"
           alt="Imagem de destaque do serviço HVAC"
           width={1200}
           height={400}
           sizes="(max-width: 768px) 100vw, 1200px"
-          className="w-full h-auto mt-8 mb-14 rounded-lg shadow-md lg:max-w-[500px]"
+          className="w-full h-auto mt-8 mb-20 rounded-lg shadow-md lg:max-w-[500px]"
         />
       </div>
     </section>
