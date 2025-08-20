@@ -1,3 +1,27 @@
+# Landing-Page-HVAC
+
+Landing Page desenvolvida para promover serviços profissionais de HVAC. O projeto utiliza Next.js e React para criar uma interface responsiva e amigável.
+
+# Tecnologias Utilizadas
+Next.js: Framework React para renderização do lado do servidor e geração de sites estáticos.
+
+React: Biblioteca JavaScript para construção de interfaces de usuário.
+
+Tailwind CSS: Framework CSS para estilização rápida e responsiva.
+
+Lucide React: Conjunto de ícones para interfaces modernas.
+
+TypeScript/JavaScript: Para lógica e componentes dinâmicos.
+
+# Contato
+Tel: (21) 97971-4744
+
+E-mail: matheusizaquiel1898@gmail.com | matizaquiel@gmail.com
+
+GitHub: https://github.com/MatheusIzaquiel
+
+# Copie o Repositório caso também queira fazer
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
