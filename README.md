@@ -1,7 +1,7 @@
 # Landing-Page-HVAC
 
 Landing Page desenvolvida para promover serviços profissionais de HVAC. O projeto utiliza Next.js e React para criar uma interface responsiva e amigável.
-Veja a página aqui: [https://landingpageventmarhvac.vercel.app/](https://landingpageventmarhvac.vercel.app/)
+Veja a página aqui: <a href="https://landingpageventmarhvac.vercel.app/" target="_blank">
 
 # Tecnologias Utilizadas
 Next.js: Framework React para renderização do lado do servidor e geração de sites estáticos.
