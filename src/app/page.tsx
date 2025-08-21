@@ -6,6 +6,12 @@ import { Hero } from "@/components/Hero";
 import { Services } from "@/components/Services";
 import { Testimonials } from "@/components/Testimonials";
 
+
+export const metadata = {
+  title: "Ventmar HVAC",
+};
+
+
 export default function Home() {
   return (
     <>
