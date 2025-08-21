@@ -30,7 +30,7 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between relative">
         {/* LOGO */}
         <span className="font-bold text-2xl">
-          Sistema <span className="text-blue-600">HVAC</span>
+          Ventmar <span className="text-blue-600">HVAC</span>
         </span>
 
         {/* Botão Mobile */}

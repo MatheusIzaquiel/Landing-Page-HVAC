@@ -78,14 +78,19 @@ export function Services() {
   ];
 
   return (
-    <section className="w-full bg-white mt-20" id="servicos">
+    <section className="w-full bg-white py-20" id="servicos">
       <div className="container max-w-7xl mx-auto px-4 py-3 lg:flex gap-10">
-        <div className="flex flex-col items-center justify-center gap-4">
-          <h2 className="text-3xl">Nossos Serviços de HVAC</h2>
-          <p className="text-center text-[18px] text-gray-500">
-            Da instalação à manutenção, oferecemos soluções abrangentes de HVAC
-            para residências e empresas no Rio de Janeiro.
-          </p>
+        <article className="flex flex-col items-center justify-center gap-4">
+          {/*Texto do Service*/}
+          <div className="space-y-5">
+            <h2 className="text-3xl text-center">Nossos Serviços de HVAC</h2>
+            <p className="text-center text-[18px] text-gray-500">
+              Da instalação à manutenção, oferecemos soluções abrangentes de HVAC
+              para residências e empresas no Rio de Janeiro.
+            </p>
+          
+          </div>
+          {/*Cards do Service*/}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-10">
             {/* Inserindo itens do array Dinamicamente */}
             {services.map((item, index) => {
@@ -94,7 +99,7 @@ export function Services() {
               return (
                 <div
                   key={index}
-                  className="flex flex-col gap-2 border border-gray-300 px-4 py-4 rounded-4xl space-y-2 hover:shadow-[0_4px_6px_rgba(0,0,0,0.2)] duration-300 "
+                  className="flex flex-col gap-2 border border-gray-300 px-4 py-4 rounded-2xl space-y-2 hover:shadow-[0_4px_6px_rgba(0,0,0,0.2)] duration-300 "
                 >
                   <Icon className="w-12 h-12 text-blue-500" />
                   <h3 className="font-bold">{item.title}</h3>
@@ -110,7 +115,7 @@ export function Services() {
                   ))}
                   </ul>
                   <div className="flex items-center justify-center mt-1">
-                    <button className="cursor-pointer text-sm w-[80%] py-0.5  text-blue-500 border border-blue-500 rounded-md hover:bg-blue-100 duration-300 hover:text-black">
+                    <button className="cursor-pointer text-sm w-[100%] py-0.5 text-blue-500 border border-blue-500 rounded-md hover:bg-blue-100 duration-300 hover:text-black">
                       Saiba Mais
                     </button>
                   </div>
@@ -118,7 +123,7 @@ export function Services() {
               );
             })}
           </div>
-        </div>
+        </article>
       </div>
     </section>
   );
